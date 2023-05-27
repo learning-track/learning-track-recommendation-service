@@ -1,7 +1,7 @@
 import pymorphy2
 import pandas as pd
 
-from nltk.corpus import stopwords
+from nltk
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
@@ -10,6 +10,9 @@ from core.models import User, Material
 
 
 def create_similarity_matrix(descriptions, metric='linear_kernel'):
+    # Downloading stopwords:
+    nltk.download('stopwords')
+    
     # Define a tfidf vectorizer and remove all stopwords:
     tfidf = TfidfVectorizer(stop_words=stopwords.words('english') + stopwords.words('russian'))
 
