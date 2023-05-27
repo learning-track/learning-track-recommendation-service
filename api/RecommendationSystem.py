@@ -2,6 +2,7 @@ import pymorphy2
 import pandas as pd
 
 import nltk
+from nltk.corpus import stopwords
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
