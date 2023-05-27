@@ -1,7 +1,7 @@
 import pymorphy2
 import pandas as pd
 
-from nltk
+import nltk
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
